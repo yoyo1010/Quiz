@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Exo', sans-serif;
+    box-sizing: border-box;
+}
+
+#quizbody {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: #d4e0ee;
+}
+
+#containerq {
+    height: auto;
+    width: auto;
+}
+
+/*Start Section*/
+#start {
+    height: 70px;
+    width: 250px;
+    text-align: center;
+    padding: 20px 0;
+    background: #e7f1fa;
+    color: #000;
+    font-size: 23px;
+    font-weight: 700;
+    border-radius: 30px 10px;
+    border: 1px solid #b0c4d8;
+    cursor: pointer;
+/*    display: none;*/
+}
+
+#start:hover {
+    background: #00b4fc;
+    color: #e7f1fa;
+}
+
+/*guide Section*/
+#quiz {
+    height: auto;
+    width: 580px;
+    padding: 20px;
+    background: #e7f1fa;
+    border-radius: 30px 10px;
+    border: 1px solid #b0c4d8;
+    display: none;
+}
+#quiz {
+    /*    display: block;*/
+    height: 480px;
+    position: relative;
+}
+
+/*Quiz Questions*/
+#quiz #question {
+    position: absolute;
+    top: 90px;
+    display: flex;
+    flex-direction: row;
+}
+
+#quiz #question h2 {
+    font-size: 27px;
+}
+
+#quiz #question h2:first-child {
+    margin: 0 10px 0 5px;
+}
+
+/*Quiz Options*/
+#quiz #optionList {
+    height: 400px;
+    width:100%;
+    position: absolute;
+    top: 160px;
+}
+
+#quiz #optionList h4 {
+    height: 50px;
+    width: 535px;
+    background: #00b4fc;
+    line-height: 50px;
+    margin: 5px 0;
+    border-radius: 7px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #fff;
+    overflow: hidden;
+    border: 1px solid #b0c4d8;
+    cursor: pointer;
+}
+
+#quiz #optionList h4:hover {
+    background: #005bc5;
+}
+
+#quiz #optionList .active {
+    background: #005bc5;
+}
+
+#quiz #optionList .disabled {
+    pointer-events: none;
+}
+
+/*Answers Section*/
+
+/*Result Section*/
+#containerq #result {
+    height: 500px;
+    width: 450px;
+    padding: 20px;
+    background: #e7f1fa;
+    border-radius: 30px 10px;
+    border: 1px solid #b0c4d8;
+    overflow: hidden;
+    position: relative;
+        display: none;
+}
+
+#containerq #result i {
+    font-size: 180px;
+    color: #00b4fc;
+    position: absolute;
+    top: 30px;
+    left: 120px;
+}
+
+
+#containerq #result #points {
+    font-size: 30px;
+    top: 275px;
+}
+
+#containerq #result button {
+    height: 60px;
+    width: 260px;
+    border: none;
+    outline: none;
+    background: #00b4fc;
+    color: #e7f1fa;
+    position: absolute;
+    left: 105px;
+    top: 335px;
+    border: 1px solid #b0c4d8;
+    border-radius: 20px 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#containerq #result button:last-child {
+    top: 405px;
+}
+
+#containerq #result button:hover {
+    background: #005bc5;
+}
